@@ -1,0 +1,15 @@
+name: xarray-pyreshaper
+channels:
+  - conda-forge 
+dependencies:
+  - python=3.6
+  - numpy 
+  - dask 
+  - distributed 
+  - zarr 
+  - xarray
+  - importnb 
+  - pytest 
+  - pytest-cov 
+  - pip:
+    - version-information 
