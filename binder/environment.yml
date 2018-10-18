@@ -18,5 +18,6 @@ dependencies:
   - python-blosc
   - lz4
   - nbserverproxy
+  - click
   - pip:
     - version-information 
