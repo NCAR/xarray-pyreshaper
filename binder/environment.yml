@@ -17,5 +17,6 @@ dependencies:
   - jupyterlab
   - python-blosc
   - lz4
+  - nbserverproxy
   - pip:
     - version-information 
