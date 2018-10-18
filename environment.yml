@@ -1,6 +1,7 @@
 name: xarray-pyreshaper
 channels:
-  - conda-forge 
+  - conda-forge
+  - default
 dependencies:
   - python=3.6
   - numpy 
@@ -11,5 +12,10 @@ dependencies:
   - importnb 
   - pytest 
   - pytest-cov 
+  - netcdf4
+  - numcodecs
+  - jupyterlab
+  - python-blosc
+  - lz4
   - pip:
     - version-information 
