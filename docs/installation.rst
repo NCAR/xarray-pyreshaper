@@ -5,7 +5,7 @@ Installation
 ============
 
 
-Stable release
+Stable release (COMING SOON!)
 --------------
 
 To install xreshaper, run this command in your terminal:
@@ -25,6 +25,12 @@ you through the process.
 
 From sources
 ------------
+You can install specific git commit/tag with pip by running:
+
+.. code-block:: console
+
+    $ pip install git+git://github.com/NCAR/xarray-pyreshaper.git@0.1.0
+
 
 The sources for xreshaper can be downloaded from the `Github repo`_.
 
@@ -32,13 +38,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/NCAR/xreshaper
+    $ git clone git://github.com/NCAR/xarray-pyreshaper
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/NCAR/xreshaper/tarball/master
+    $ curl  -OL https://github.com/NCAR/xarray-pyreshaper/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +53,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/NCAR/xreshaper
-.. _tarball: https://github.com/NCAR/xreshaper/tarball/master
+.. _Github repo: https://github.com/NCAR/xarray-pyreshaper
+.. _tarball: https://github.com/NCAR/xarray-pyreshaper/tarball/master

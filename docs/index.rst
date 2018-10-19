@@ -6,6 +6,7 @@ Welcome to xreshaper's documentation!
    :caption: Contents:
 
    installation
+   usage
 
 Indices and tables
 ==================

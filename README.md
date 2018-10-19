@@ -7,6 +7,8 @@
 [PyReshaper](https://github.com/NCAR/PyReshaper)-like operation with Xarray
 
 
+Xreshaper provides a convenient command line tool via xreshaper-run:
+
 ```bash
 $ xreshaper-run --help
 Usage: xreshaper-run [OPTIONS]
