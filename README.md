@@ -6,6 +6,10 @@
 
 [PyReshaper](https://github.com/NCAR/PyReshaper)-like operation with Xarray
 
+To install the most recent stable version, run:
+```bash
+pip install git+git://github.com/NCAR/xarray-pyreshaper.git@0.1.0
+```
 
 Xreshaper provides a convenient command line tool via xreshaper-run:
 
