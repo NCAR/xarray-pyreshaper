@@ -3,7 +3,4 @@ omit =
     tests/
     xreshaper/_version.py
     versioneer.py
-
-
-source = 
-    xreshaper
+    setup.py

@@ -58,8 +58,7 @@ def generate_fake_data(time, suffix, output_dir=None):
     dset.to_netcdf(path, engine="netcdf4", mode="w")
 
 
-def make_netcdf_data(start_date="2000-01-01", freq="1M",
-                     periods=24, output_dir=None):
+def make_netcdf_data(start_date="2000-01-01", freq="1M", periods=24, output_dir=None):
     if not output_dir:
         home = os.environ.get("HOME")
         output_dir = f"{home}/.xreshaper/data"
@@ -69,5 +68,4 @@ def make_netcdf_data(start_date="2000-01-01", freq="1M",
     for index, time in enumerate(times):
         generate_fake_data(time, index, output_dir)
 
-    print(
-        f"******** The generated data location is : {output_dir} ************")
+    print(f"******** The generated data location is : {output_dir} ************")

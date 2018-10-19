@@ -148,12 +148,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc,
-     "xreshaper",
-     u"xreshaper Documentation",
-     [author],
-     1)]
+man_pages = [(master_doc, "xreshaper", u"xreshaper Documentation", [author], 1)]
 
 
 # -- Options for Texinfo output ----------------------------------------
@@ -181,8 +176,4 @@ intersphinx_mapping = {
 }
 
 
-ipython_execlines = [
-    "import numpy as np",
-    "import pandas as pd",
-    "import xarray as xr",
-]
+ipython_execlines = ["import numpy as np", "import pandas as pd", "import xarray as xr"]

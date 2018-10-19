@@ -6,7 +6,7 @@ import xarray as xr
 
 def read_time_slices(input_directory=None):
     if input_directory:
-        paths = input_directory + "/*.nc"
+        paths = f"{input_directory}/*.nc"
         dset = xr.open_mfdataset(paths, data_vars="minimal")
         return dset
 
@@ -35,8 +35,7 @@ def find_time_dependent_vars(dset=None):
         return tseries_vars, metadata_vars
 
 
-def create_time_series(output_directory, output_prefix,
-                       output_suffix, dset=None):
+def create_time_series(output_directory, output_prefix, output_suffix, dset=None):
     if not isinstance(dset, xr.Dataset):
         raise TypeError(
             f"dataset must be of type={xr.Dataset}.\

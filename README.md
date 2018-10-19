@@ -6,6 +6,29 @@
 
 [PyReshaper](https://github.com/NCAR/PyReshaper)-like operation with Xarray
 
+
+```bash
+$ ./s2srun --help
+Usage: s2srun [OPTIONS]
+
+Options:
+  --engine TEXT            Engine to use when reading/writing files.
+                           [default: netcdf4]
+  --input-directory TEXT   Directory in which time-slices files are located
+                           [default: ]
+  --output-directory TEXT  Directory in which time-series files will be saved
+                           [default: ]
+  --output-prefix TEXT     String prefix for all output files.  The output
+                           file will be named according to the rule:
+                           output_prefix + variable_name + output_suffix
+                           [default: tseries.]
+  --output-suffix TEXT     String suffix for all output files.  The output
+                           file will be named according to the rule:
+                           output_prefix + variable_name + output_suffix
+                           [default: .nc]
+  --help                   Show this message and exit.
+```
+
 See the [documentation](https://xarray-pyreshaper.readthedocs.io/en/latest/) for more.
 
 To try out notebooks interactively in your web browser, just click on the binder link:

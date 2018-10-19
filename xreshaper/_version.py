@@ -1,4 +1,3 @@
-
 # This file helps to compute a version number in source trees obtained from
 # git-archive tarball (such as those provided by githubs download-from-tag
 # feature). Distribution tarballs (built by setup.py sdist) and build
@@ -69,13 +68,8 @@ def register_vcs_handler(vcs, method):  # decorator
     return decorate
 
 
-def run_command(
-        commands,
-        args,
-        cwd=None,
-        verbose=False,
-        hide_stderr=False,
-        env=None):
+def run_command(commands, args, cwd=None, verbose=False,
+                hide_stderr=False, env=None):
     """Call the given command(s)."""
     assert isinstance(commands, list)
     p = None

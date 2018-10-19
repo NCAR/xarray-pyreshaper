@@ -12,8 +12,6 @@ with open("README.md", encoding="utf-8") as readme_file:
 
 requirements = ["pandas>=0.23.0", "dask", "xarray", "netcdf4"]
 
-setup_requirements = ["pytest-runner"]
-
 test_requirements = ["pytest", "flake8"]
 
 setup(
@@ -28,18 +26,21 @@ setup(
     ],
     description="PyReshaper-like operation with Xarray",
     install_requires=requirements,
-    license='https://github.com/NCAR/xarray-pyreshaper/blob/master/LICENSE.rst',
+    license="https://github.com/NCAR/xarray-pyreshaper/blob/master/LICENSE.rst",
     long_description=readme,
     long_description_content_type="text/markdown",
     include_package_data=True,
     keywords="xreshaper",
     name="xreshaper",
-    packages=find_packages(include=["xreshaper"]),
-    setup_requires=setup_requirements,
+    packages=find_packages(include=["xreshaper", "xreshaper.s2srun"]),
     test_suite="tests",
     tests_require=test_requirements,
     url="https://github.com/NCAR/xarray-pyreshaper",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
+    entry_points="""
+      [console_scripts]
+      xreshaper-run=xreshaper.s2srun:cli
+      """,
     zip_safe=False,
 )
