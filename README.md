@@ -8,8 +8,8 @@
 
 
 ```bash
-$ ./s2srun --help
-Usage: s2srun [OPTIONS]
+$ xreshaper-run --help
+Usage: xreshaper-run [OPTIONS]
 
 Options:
   --engine TEXT            Engine to use when reading/writing files.
