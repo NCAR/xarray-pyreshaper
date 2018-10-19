@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/NCAR/xarray-pyreshaper.svg?branch=master)](https://travis-ci.org/NCAR/xarray-pyreshaper)
+
 # xarray-pyreshaper
 PyReshaper-like operation with Xarray
 
