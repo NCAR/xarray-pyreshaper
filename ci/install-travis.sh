@@ -38,6 +38,7 @@ conda install -c conda-forge \
                 dask \
                 distributed \
                 zarr \
+                xarray \
                 click \
                 autopep8 \
                 netcdf4 \
