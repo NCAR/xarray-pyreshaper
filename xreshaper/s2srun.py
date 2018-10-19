@@ -7,9 +7,12 @@ import click
 
 from .core import read_time_slices
 from .core import create_time_series, save_to_disk
+from . import __version__
+version = __version__
 
 
 @click.command()
+@click.version_option(version=version)
 @click.option(
     "--engine",
     default="netcdf4",
@@ -53,8 +56,14 @@ from .core import create_time_series, save_to_disk
         "output_prefix + variable_name + output_suffix "
     ),
 )
-def cli(engine, input_directory, output_directory, output_prefix, output_suffix):
-    print(engine, input_directory, output_directory, output_prefix, output_suffix)
+def cli(engine, input_directory, output_directory,
+        output_prefix, output_suffix):
+    print(
+        engine,
+        input_directory,
+        output_directory,
+        output_prefix,
+        output_suffix)
     dset = read_time_slices(input_directory)
     datasets, paths = create_time_series(
         output_directory, output_prefix, output_suffix, dset

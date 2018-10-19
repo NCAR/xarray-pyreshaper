@@ -12,6 +12,7 @@ $ xreshaper-run --help
 Usage: xreshaper-run [OPTIONS]
 
 Options:
+  --version                Show the version and exit.
   --engine TEXT            Engine to use when reading/writing files.
                            [default: netcdf4]
   --input-directory TEXT   Directory in which time-slices files are located

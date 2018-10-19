@@ -35,7 +35,8 @@ def find_time_dependent_vars(dset=None):
         return tseries_vars, metadata_vars
 
 
-def create_time_series(output_directory, output_prefix, output_suffix, dset=None):
+def create_time_series(output_directory, output_prefix,
+                       output_suffix, dset=None):
     if not isinstance(dset, xr.Dataset):
         raise TypeError(
             f"dataset must be of type={xr.Dataset}.\
@@ -61,7 +62,10 @@ def create_time_series(output_directory, output_prefix, output_suffix, dset=None
             fpath = f"{output_directory}/{output_prefix}{vname}{output_suffix}"
             datasets.append(var_dset)
             paths.append(fpath)
-
+        print(
+            f"*** The generated time series files are located \
+            in : {output_directory} ***"
+        )
     return datasets, paths
 
 

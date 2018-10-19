@@ -1,6 +1,6 @@
 [run]
 omit = 
-    tests/
+    tests/*.py
     xreshaper/_version.py
     versioneer.py
     setup.py
