@@ -58,8 +58,8 @@ master_doc = "index"
 
 # General information about the project.
 project = u"xreshaper"
-copyright = u"2018, University Corporation for Atmospheric Research"
-author = u"Anderson Banihirwe, Kevin Paul"
+copyright = u"2019 onwards, University Corporation for Atmospheric Research"
+author = u"Experimental Development Team"
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -135,13 +135,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass
 # [howto, manual, or own class]).
 latex_documents = [
-    (
-        master_doc,
-        "xreshaper.tex",
-        u"xreshaper Documentation",
-        u"Anderson Banihirwe, Kevin Paul",
-        "manual",
-    )
+    (master_doc, "xreshaper.tex", u"xreshaper Documentation", author, "manual")
 ]
 
 
@@ -173,7 +167,6 @@ texinfo_documents = [
 intersphinx_mapping = {
     "python": ("https://docs.python.org/", None),
     "pandas": ("http://pandas-docs.github.io/pandas-docs-travis/", None),
-    "xnd": ("http://xnd.readthedocs.io", None),
 }
 
 
