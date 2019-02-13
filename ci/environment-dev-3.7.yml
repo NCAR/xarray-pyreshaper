@@ -1,0 +1,30 @@
+name: xreshaper-dev
+channels:
+  - conda-forge
+dependencies:
+  - autopep8
+  - black
+  - codecov
+  - click
+  - coverage
+  - dask
+  - distributed
+  - flake8
+  - ipykernel
+  - isort
+  - matplotlib
+  - nbsphinx
+  - netcdf4
+  - numpy>=1.15
+  - numpydoc
+  - pandoc
+  - pytest
+  - pytest-cov
+  - python=3.7
+  - recommonmark
+  - sphinx_rtd_theme
+  - sphinx>=1.6
+  - xarray>=0.11.3
+  - zarr
+  - pip:
+    - sphinx_copybutton

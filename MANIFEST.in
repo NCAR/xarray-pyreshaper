@@ -1,0 +1,12 @@
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+include requirements.txt
+
+
+recursive-include xreshaper *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+include versioneer.py
+include xreshaper/_version.py

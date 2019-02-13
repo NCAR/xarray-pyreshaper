@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from __future__ import absolute_import
-from __future__ import print_function
+from __future__ import absolute_import, print_function
+
 import xarray as xr
 
 
@@ -35,8 +35,7 @@ def find_time_dependent_vars(dset=None):
         return tseries_vars, metadata_vars
 
 
-def create_time_series(output_directory, output_prefix,
-                       output_suffix, dset=None):
+def create_time_series(output_directory, output_prefix, output_suffix, dset=None):
     if not isinstance(dset, xr.Dataset):
         raise TypeError(
             f"dataset must be of type={xr.Dataset}.\

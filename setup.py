@@ -1,41 +1,36 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 """The setup script."""
 
 from setuptools import setup, find_packages
 import versioneer
-
-with open("README.md", encoding="utf-8") as readme_file:
-    readme = readme_file.read()
+from os.path import exists
 
 
-requirements = ["pandas>=0.23.0", "dask", "xarray", "netcdf4"]
+if exists("requirements.txt"):
+    with open("requirements.txt") as f:
+        install_requires = f.read().strip().split("\n")
+else:
+    install_requires = ["dask", "xarray", "click"]
 
-test_requirements = ["pytest", "flake8"]
+if exists("README.rst"):
+    with open("README.rst") as f:
+        long_description = f.read()
+else:
+    long_description = ""
 
 setup(
     maintainer="Anderson Banihirwe",
     maintainer_email="abanihi@ucar.edu",
-    classifiers=[
-        "Development Status :: 2 - Pre-Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: BSD License",
-        "Natural Language :: English",
-        "Programming Language :: Python :: 3.6",
-    ],
-    description="PyReshaper-like operation with Xarray",
-    install_requires=requirements,
-    license="https://github.com/NCAR/xarray-pyreshaper/blob/master/LICENSE.rst",
-    long_description=readme,
-    long_description_content_type="text/markdown",
+    description="PyReshaper-like operations with xarray + Dask",
+    install_requires=install_requires,
+    license="Apache 2.0",
+    long_description=long_description,
     include_package_data=True,
     keywords="xreshaper",
     name="xreshaper",
-    packages=find_packages(include=["xreshaper", "xreshaper.s2srun"]),
-    test_suite="tests",
-    tests_require=test_requirements,
-    url="https://github.com/NCAR/xarray-pyreshaper",
+    packages=find_packages(),
+    url="https://github.com/NCAR/xreshaper",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     entry_points="""

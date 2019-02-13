@@ -1,5 +1,5 @@
-Welcome to xreshaper's documentation!
-======================================
+.. include:: ../../README.rst
+
 
 .. toctree::
    :maxdepth: 2
@@ -7,6 +7,9 @@ Welcome to xreshaper's documentation!
 
    installation
    usage
+   api
+   contributing
+   changelog
 
 Indices and tables
 ==================
