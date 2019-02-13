@@ -1,13 +1,11 @@
 #!/usr/bin/env python
-from __future__ import absolute_import
-from __future__ import print_function
-
+from __future__ import absolute_import, print_function
 
 import click
 
-from .core import read_time_slices
-from .core import create_time_series, save_to_disk
 from . import __version__
+from .core import create_time_series, read_time_slices, save_to_disk
+
 version = __version__
 
 
@@ -56,14 +54,8 @@ version = __version__
         "output_prefix + variable_name + output_suffix "
     ),
 )
-def cli(engine, input_directory, output_directory,
-        output_prefix, output_suffix):
-    print(
-        engine,
-        input_directory,
-        output_directory,
-        output_prefix,
-        output_suffix)
+def cli(engine, input_directory, output_directory, output_prefix, output_suffix):
+    print(engine, input_directory, output_directory, output_prefix, output_suffix)
     dset = read_time_slices(input_directory)
     datasets, paths = create_time_series(
         output_directory, output_prefix, output_suffix, dset
