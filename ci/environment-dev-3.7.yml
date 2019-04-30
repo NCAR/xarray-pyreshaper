@@ -27,6 +27,7 @@ dependencies:
   - sphinx>=1.6
   - xarray>=0.11.3
   - zarr
+  - git
   - pip:
     - pytest-xdist
     - sphinx_copybutton
