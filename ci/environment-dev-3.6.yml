@@ -16,5 +16,6 @@ dependencies:
   - xarray
   - zarr
   - git
+  - make
   - pip:
       - pytest-xdist
